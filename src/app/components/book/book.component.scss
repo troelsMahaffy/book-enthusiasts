@@ -1,0 +1,59 @@
+:host {
+    display: flex;
+    padding: 1rem;
+    border: 1px;
+    border-style: dashed;
+    margin: .3rem;
+    justify-content: space-between;
+    min-height: 260px;
+
+    .bookDescription {
+        padding: 0 1rem 0 0;
+        display: flex;
+        flex-direction: column;
+
+        .bookLink {
+            display: block;
+            margin-top: 1rem;
+            
+        }
+
+        .bookDate {
+            font-size: 12px;
+            margin-top: .6rem;
+            font-weight: 900;
+        }
+
+        .bookTitle {
+            margin: 0;    
+        }
+        
+        .bookAuthor {
+            font-size: 18px;
+        }
+
+        .bookDescription {
+            margin-top: 1rem;
+        }
+    }
+
+    .bookThumbnail {
+        height: 220px;
+        display: flex;
+        align-self: center;
+
+        @media only screen and (max-width: 767px) {
+            align-self:flex-start;
+        }
+
+        &.detailsView {
+            height: 420px;
+            align-self:flex-start;
+
+            @media only screen and (max-width: 767px) {
+                height: 220px;
+            }
+
+        }
+    }
+}

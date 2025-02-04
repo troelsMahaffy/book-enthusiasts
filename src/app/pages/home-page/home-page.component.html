@@ -1,0 +1,18 @@
+
+<form class="searchForm">
+  <input placeholder="Search book title" [value]="getSearchQuery()" type="search" (input)="onInput($event)" />
+  <div *ngIf="searchSuggestions().length" class="searchSuggestions">
+    <div class="book" *ngFor="let book of searchSuggestions()">
+      <book [book]="book"></book>
+    </div>
+
+  </div>
+</form>
+
+
+<h1 class="latestBooksHeading">Latest Books</h1>
+<div class="books">
+  <div class="book" *ngFor="let book of booksStore.sortedBooks()">
+    <book [book]="book"></book>
+  </div>
+</div>

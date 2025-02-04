@@ -1,0 +1,8 @@
+<div class="bookDescription"  [ngClass]="{'detailsView': detailsView === true}">
+    <h2 class="bookTitle">{{ book.title }}</h2>
+    <i class="bookAuthor">{{ book.author }}</i>
+    <div class="bookDescription">{{ detailsView === true ? book.longDescription : book.description }}</div>
+    <i class="bookDate">Publication date: {{ book.publicationDate }}</i>
+    <a class="bookLink" *ngIf="detailsView !== true" routerLink="/book/{{ book.id}}" routerLinkActive="active" ariaCurrentWhenActive="page">Go to book</a>
+</div>
+<img class="bookThumbnail" [ngClass]="{'detailsView': detailsView}" src="{{book.thumbnailImageUrl}}" />

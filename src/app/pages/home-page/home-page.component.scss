@@ -1,0 +1,61 @@
+:host {
+    display: flex;
+    flex-direction: column;
+
+
+    .searchForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.7rem;
+        position: relative;
+
+        .searchSuggestions {
+            position: absolute;
+            top: 3rem;
+            max-width: 30rem;
+            background-color: white;
+            padding: 1rem;
+            box-shadow: 0 0 4px 3px rgba(123,123,123,0.35);
+        }
+        
+
+        input[type="search"] {
+            font-size: 18px;
+            padding: .6rem;
+            width: 17rem;
+            border-radius: .1rem;
+            border: solid 1px;
+        }
+    }
+    
+    .latestBooksHeading {
+        align-self: center;
+        font-family: "Dancing Script", serif;
+        margin-bottom: .3rem;
+        font-size: 2rem;
+        font-weight: 900;
+        display: flex;
+        border-top: solid 1px;
+        border-bottom: solid 1px;
+    }
+    
+    .books {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 420px));
+        justify-content: center;
+    }
+    
+    @media only screen and (max-width: 1024px) {
+        .books {
+            grid-template-columns: repeat(2, minmax(320px, 420px));
+        }
+    }
+    
+    @media only screen and (max-width: 767px) {
+        .books {
+            grid-template-columns: repeat(1, minmax(320px, 420px));
+        }
+    }
+}

@@ -1,0 +1,18 @@
+<main class="main">
+  <div class="content">
+    <div class="logo">{{ title }}</div>
+    <div class="navigation">
+      <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
+
+      <a routerLink="/books" routerLinkActive="active" ariaCurrentWhenActive="page">All books</a>
+    </div>
+
+    <!-- pre> {{ booksStore.booksCount() }}</pre>
+    <pre> {{ booksStore.sortedBooks() | json }}</pre -->
+
+    <!-- home-page [sortedBooks]="booksStore.sortedBooks()"></home-page -->
+
+    
+  </div>
+</main>
+<router-outlet />

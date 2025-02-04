@@ -1,0 +1,31 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    .outerBooks {
+        display: flex;
+        flex-direction: column;
+        max-width: 1324px;
+        align-self: center;
+        width: 100%;
+
+        .latestBooksHeading {
+            align-self: center;
+            font-family: "Dancing Script", serif;
+            margin-bottom: .3rem;
+            font-size: 2rem;
+            font-weight: 900;
+            display: flex;
+            border-top: solid 1px;
+            border-bottom: solid 1px;
+        }
+        
+        .books {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 420px));
+            justify-content: center;
+        }
+    }
+
+}

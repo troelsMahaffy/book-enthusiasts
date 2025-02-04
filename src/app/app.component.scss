@@ -1,0 +1,48 @@
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    font-size: 1.3rem;
+    gap: 1rem;
+
+    a {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.logo {
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 7rem;
+    display: flex;
+    align-self: center;
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+    .logo {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .logo {
+        font-size: 4rem;
+    }
+}

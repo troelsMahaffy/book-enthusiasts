@@ -1,0 +1,8 @@
+<div class="outerBooks">
+  <h1 class="latestBooksHeading">All Books</h1>
+  <div class="books">
+    <div class="book" *ngFor="let book of booksStore.books()">
+      <book [book]="book"></book>
+    </div>
+  </div>
+</div>
