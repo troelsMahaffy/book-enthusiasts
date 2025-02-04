@@ -1,6 +1,6 @@
 # To whom it might concern
 
-This is my take on a quick and dirty book site. I chose to use a signals state, as I think this is a very cool new feature in Angular. Therefore you need node v20.17.0 to run.
+This is my take on a quick and dirty book site. I chose to use a signals state, as I think this is a very cool new feature in Angular.
 
 Hope you enjoy, and I would love to hear your feedback.
 
