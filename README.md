@@ -1,4 +1,4 @@
-# To whom it might concern
+# To whom it may concern
 
 This is my take on a quick and dirty book site. I chose to use a signals state, as I think this is a very cool new feature in Angular.
 
