@@ -1,6 +1,6 @@
 # To whom it might concern
 
-This is my take on a quick and dirty book site. I chose to use a signals state, as I think this is a very cool new feature in Angular. Therefore you need node v20.17.0 to run and therefore it can not run on stackblitz, so you need to fork and run it locally.
+This is my take on a quick and dirty book site. I chose to use a signals state, as I think this is a very cool new feature in Angular. Therefore you need node v20.17.0 to run.
 
 Hope you enjoy, and I would love to hear your feedback.
 
